@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div id='main'>
+       <div class="container">
+          <div class="title">Registration</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nom</span>
+                        <input type="text" placehorder="Entrer votre Nom" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Prenom</span>
+                        <input type="text" placehorder="Entrer votre Prenom" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placehorder="Entrer votre Email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Mot de Passe</span>
+                        <input type="text" placehorder="Entrer votre Mot de Passe" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Tel</span>
+                        <input type="text" placehorder="Entrer votre Numéro" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Adresse</span>
+                        <input type="text" placehorder="Entrer votre Adresse" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Code Postal</span>
+                        <input type="text" placehorder="Entrer votre Code Postal" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

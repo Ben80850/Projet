@@ -17,4 +17,26 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+
+
+    /**
+     * @Route("register", name="register")
+     */
+    public function register(): Response
+    {
+        return $this->render('main/register.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+
+
+
+
+    
+    
+
+
+
+    
 }
