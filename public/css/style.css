@@ -90,7 +90,81 @@ body {
     background: #fff;
     padding: 25px 30px;
     border-radius: 5px;
-    
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    height: 3;
+    width: 30px;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box{
+
+    width: calc(100% / 2 - 20px );
+}
+
+form .user-details .input-box input{
+    height: 25px;
+    width: 100%;
+}
+
+form .button{
+    margin: 15px ;
+    height: 20px;
+}
+
+form .button input{
+   height: 35px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+
+form .button input:hover{
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+
+form .button1 input
+{
+    border: none;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    color:#fff;
+     background: linear-gradient(135deg,#71b7e6,#9b59b6);
+ }
+
+ form .button1{
+    margin: 10px ;
+    height: 15px;
+}
+form .button2{
+   margin-top: 10px;
+}
 

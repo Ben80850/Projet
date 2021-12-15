@@ -1,0 +1,113 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div id='main'>
+       <div class="container">
+          <div class="title">Candidatures :</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nom</span>
+                        <input type="text" placehorder="Entrer votre Nom" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Prenom</span>
+                        <input type="text" placehorder="Entrer votre Prenom" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Producteur</span>
+                        <input type="text" placehorder="Entrer votre Prenom" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Manager</span>
+                        <input type="text" placehorder="Entrer votre Prenom" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" placehorder="Entrer votre Email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Département</span>
+                        <input type="number" placehorder="Entrer votre département" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Tel</span>
+                        <input type="tel" placehorder="Entrer votre Numéro" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Adresse</span>
+                        <input type="text" placehorder="Entrer votre Adresse" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Code Postal</span>
+                        <input type="text" placehorder="Entrer votre Code Postal" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Scene</span>
+                        <input type="text" placehorder="Type de scéne" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Nom du groupe</span>
+                        <input type="text" placehorder="Nom du groupe" required>
+                    </div>
+
+                     
+                    <div class="input-box">
+                        <span class="details">Date de création</span>
+                        <input type="date" placehorder="Date de création" required>
+                    </div>
+
+                       
+                    <div class="input-box">
+                        <span class="details">Expérience</span>
+                        <input type="text" placehorder="Experience" required>
+                    </div>
+
+                     <div class="input-box">
+                        <span class="details">Site Web</span>
+                        <input type="url" placehorder="site">
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Youtube</span>
+                        <input type="url" placehorder="site">
+                    </div>
+                    
+
+                      <div class="input-box">
+                        <span class="details">Soundcloud</span>
+                        <input type="url" placehorder="site">
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Audio</span>
+                        <input type="file" placehorder="Audio" accept=".mp3" required>
+                    </div>
+                              
+                    <div class="input-box">
+                        <span class="details">Présentation</span>
+                        <textarea id="story" name="story" rows="5" cols="33"></textarea
+                    </div>
+
+                      <div class="input-box">
+                        <span class="details">Image</span>
+                        <input type="file" placehorder="image" accept=".png,.jpeg" required>
+                    </div>
+                    
+              </div>
+                 <div class="button">
+                    <input type="submit" value="Enregistrer">
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

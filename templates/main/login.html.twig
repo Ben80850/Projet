@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div id='main'>
+       <div class="container">
+          <div class="title">Connection :</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" placehorder="Entrer votre Email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Mot de Passe</span>
+                        <input type="password" placehorder="Entrer votre Mot de Passe" minlength="8" required>
+                    </div>
+
+                </div>
+                  <div class="button">
+                        <input type="submit" value="Connexion">
+                    </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

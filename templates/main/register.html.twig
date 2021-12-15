@@ -2,7 +2,7 @@
 {% block body %}
     <div id='main'>
        <div class="container">
-          <div class="title">Registration</div>
+          <div class="title">Inscription :</div>
             <form action="#">
                 <div class="user-details">
                     <div class="input-box">
@@ -17,17 +17,17 @@
 
                     <div class="input-box">
                         <span class="details">Email</span>
-                        <input type="text" placehorder="Entrer votre Email" required>
+                        <input type="email" placehorder="Entrer votre Email" required>
                     </div>
 
                     <div class="input-box">
                         <span class="details">Mot de Passe</span>
-                        <input type="text" placehorder="Entrer votre Mot de Passe" required>
+                        <input type="password" placehorder="Entrer votre Mot de Passe" minlength="8" required>
                     </div>
 
                     <div class="input-box">
                         <span class="details">Tel</span>
-                        <input type="text" placehorder="Entrer votre Numéro" required>
+                        <input type="tel" placehorder="Entrer votre Numéro" required>
                     </div>
 
                     <div class="input-box">
@@ -39,6 +39,9 @@
                         <span class="details">Code Postal</span>
                         <input type="text" placehorder="Entrer votre Code Postal" required>
                     </div>
+                </div>
+                 <div class="button">
+                    <input type="submit" value="Enregistrer">
                 </div>
             </form>
         </div>

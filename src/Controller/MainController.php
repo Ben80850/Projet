@@ -29,6 +29,38 @@ class MainController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("login", name="login")
+     */
+    public function login(): Response
+    {
+        return $this->render('main/login.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    /**
+     * @Route("profil", name="profil")
+     */
+    public function profil(): Response
+    {
+        return $this->render('main/profil.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+    /**
+     * @Route("candidatures", name="candidatures")
+     */
+    public function candidatures(): Response
+    {
+        return $this->render('main/candidatures.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+
+
+
 
 
 

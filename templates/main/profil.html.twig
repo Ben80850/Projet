@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div id='main'>
+       <div class="container">
+          <div class="title">Profil :</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="label">
+                         <label>Nom</label>
+                         <input type="text" placeholder="Nom" name="nom">
+                    </div>
+
+                   <div class="label">
+                         <label>Prenom</label>
+                         <input type="text" placeholder="Prenom" name="Prenom">
+                    </div>
+
+                    <div class="label">
+                         <label>Email</label>
+                         <input type="Eamil" placeholder="Email" name="Email">
+                    </div>
+
+                    <div class="label">
+                         <label>Adresse</label>
+                         <input type="text" placeholder="Adresse" name="Adresse">
+                    </div>
+
+                    <div class="label">
+                         <label>Code Postal</label>
+                         <input type="text" placeholder="Code Postal" name="Code Postal">
+                    </div>
+
+                    <div class="label">
+                         <label>Tel</label>
+                         <input type="Tel" placeholder="Tel" name="Tel">
+                    </div>
+                </div>
+                 <div class="button1">
+                    <input type="submit" value="Modifier le Profil">
+                     <div class="button2">
+                    <input type="submit" value="Modifier le Mot de passe">
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
