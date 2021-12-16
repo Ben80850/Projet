@@ -1,0 +1,51 @@
+symfony serve = lancer le serveur
+symfony serve:stop = stop le serveur
+
+php bin/console doctrine:database:create =  création de la bdd
+
+php bin/console make:migration et php bin/console doctrine:migrations:migrate = modif de table bdd
+
+php bin/console doctrine:database:drop --force = destruction de la bdd
+
+
+
+----Dans le fichier .env
+
+Possibilité de modifier a la ligne 17 :
+
+APP_ENV=dev =  développementt
+
+APP_ENV=prod = site fini ( permet les teste réelle )
+
+
+ligne 22:
+
+MAILER_DSN=smtp://localhost:1025   =  l'hebergeur pour l'envoie des email
+
+ligne 31 :
+
+DATABASE_URL="mysql://root:c123456@127.0.0.1:3306/projets?serverVersion=5.7" = la bdd
+
+
+
+-----Dans le dos, config / package / sécurity
+
+Possible de modifier la ligne 37 a ... pour ajoute des pages accécible uniquement avec un rol spécifique
+
+---- Dans le dossier Public
+Ajout du css-js ect...
+
+----Dans le dossier Templates
+Cela concerne toutes page html -css - js ect..
+
+---- Dans le dossier src
+controller = fichier on l'on va demande les affichage de page , les redirection, les info bdd ou autre que l'on veut afficher sur la page
+
+entité = info en relation avec la bdd
+
+form = formulaire généralementt généré automatiquement pour s'adapter a un entity
+
+Repository = fonction spécifique que l'on crée
+
+Sécurity = sécuriter ^^
+

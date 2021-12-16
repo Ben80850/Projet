@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UserController!{% endblock %}
+
+{% block body %}
+    <div id='main'>
+        <div class="container">
+            <div class="title">Profil :</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="label">
+                        <label>Nom</label>
+                        <input type="text" placeholder="{{ app.user.name }}" name="nom">
+                    </div>
+
+                    <div class="label">
+                        <label>Prenom</label>
+                        <input type="text" placeholder="{{ app.user.firstname }}" name="Prenom">
+                    </div>
+
+                    <div class="label">
+                        <label>Email</label>
+                        <input type="Eamil" placeholder="{{ app.user.email }}" name="Email">
+                    </div>
+
+                    <div class="label">
+                        <label>Adresse</label>
+                        <input type="text" placeholder="Adresse" name="Adresse">
+                    </div>
+
+                    <div class="label">
+                        <label>Code Postal</label>
+                        <input type="text" placeholder="Code Postal" name="Code Postal">
+                    </div>
+
+                    <div class="label">
+                        <label>Tel</label>
+                        <input type="Tel" placeholder="Tel" name="Tel">
+                    </div>
+                </div>
+                <div class="button1">
+                    <a href="{{ path('user_edit') }}">Modifier le Profil</a>
+                    <div class="button2">
+                        <a href="{{ path('user_edit_pass') }}">Modifier le Mot de passe</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

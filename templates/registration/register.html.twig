@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+    {% for flashError in app.flashes('verify_email_error') %}
+        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+    {% endfor %}
+
+    <div id='main'>
+        <div class="container">
+            <div class="title">Inscription</div>
+            {{ form_start(registrationForm) }}
+                <div class="user-details">
+                    {{ form_start(registrationForm) }}
+                    <div class="input-box">
+                        {{ form_row(registrationForm.name) }}
+                    </div>
+                    <div class="input-box">
+                        {{ form_row(registrationForm.firstname) }}
+                    </div>
+                     <div class="input-box">
+                        {{ form_row(registrationForm.email) }}
+                     </div>
+                    <div class="input-box">
+                        {{ form_row(registrationForm.plainPassword, {
+                            label: 'Mot de Passe'
+                         }) }}
+                     </div>
+
+                    {{ form_row(registrationForm.agreeTerms, {
+                        label: 'Condition d\'utilisation: '
+                    }) }}
+                    <button type="submit" class="btn">Inscription</button>
+
+
+                    <!--<div class="input-box">
+                                <span class="details">Tel</span>
+                                <input type="text" placehorder="Entrer votre Numéro" >
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Adresse</span>
+                                <input type="text" placehorder="Entrer votre Adresse" >
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Code Postal</span>
+                                <input type="text" placehorder="Entrer votre Code Postal" >
+                                -->
+                    </div>
+                </div>
+            {{ form_end(registrationForm) }}
+        </div>
+    </div>
+{% endblock %}

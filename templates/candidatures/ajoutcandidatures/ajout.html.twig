@@ -1,0 +1,138 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter une candidatures{% endblock %}
+
+{% block body %}
+
+
+    <div id='main'>
+        <div class="container">
+            <div class="title">Candidatures :</div>
+            {{ form_start(candidaturesForm) }}
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details"></span>
+                        {{ form_row(candidaturesForm.name) }}
+                    </div>
+
+                    <div class="input-box">
+                        {{ form_row(candidaturesForm.firstname) }}
+                    </div>
+
+                    <div class="input-box">
+                        {{ form_row(candidaturesForm.producteur) }}
+                    </div>
+
+                    <div class="input-box">
+                        {{ form_row(candidaturesForm.manager) }}
+                    </div>
+
+                    <div class="input-box">
+                        {{ form_row(candidaturesForm.email) }}
+                    </div>
+
+                    <div class="input-box">
+                        {{ form_row(candidaturesForm.phone) }}
+                    </div>
+
+                    <div class="input-box">
+                        {{ form_row(candidaturesForm.adresse) }}
+                    </div>
+
+                    <div class="input-box">
+                        {{ form_row(candidaturesForm.posatlcode) }}
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Scene</span>
+                        <input type="text" placehorder="Type de scéne" >
+                    </div>
+
+                    <div class="input-box">
+                        {{ form_row(candidaturesForm.groupename) }}
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Membre du groupe</span>
+                        <input type="number" placehorder="Membre"  min="1" max="8" >
+                    </div>
+
+
+                    <div class="input-box">
+                        <span class="details">Date de création</span>
+                        <input type="date" placehorder="Date de création" >
+                    </div>
+
+
+                    <div class="input-box">
+                        {{ form_row(candidaturesForm.presentation) }}
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details"></span>
+                        {{ form_row(candidaturesForm.experiences) }}
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Site Web</span>
+                        <input type="url" placehorder="site">
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Youtube</span>
+                        <input type="url" placehorder="site">
+                    </div>
+
+
+                    <div class="input-box">
+                        <span class="details">Soundcloud</span>
+                        <input type="url" placehorder="site">
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Audio</span>
+                        <input type="file" placehorder="Audio" accept=".mp3" >
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Audio</span>
+                        <input type="file" placehorder="Audio" accept=".mp3" >
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Audio</span>
+                        <input type="file" placehorder="Audio" accept=".mp3" >
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Sacem PDF</span>
+                        <input type="file" placehorder="Sacem" accept=".pdf">
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Fiche technique PDF</span>
+                        <input type="file" placehorder="Fiche" accept=".pdf">
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Image</span>
+                        <input type="file" placehorder="image" accept=".png,.jpeg" >
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Image</span>
+                        <input type="file" placehorder="image" accept=".png,.jpeg" >
+                    </div>
+                </div>
+                <div class="button">
+                    {{ form_row(candidaturesForm.Vadider) }}
+                </div>
+            {{ form_end(candidaturesForm) }}
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}
