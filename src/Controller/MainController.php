@@ -60,6 +60,19 @@ class MainController extends AbstractController
 
 
 
+       /**
+     * @Route("Liste candidatures", name="Liste candidatures")
+     */
+    public function Listecandidatures(): Response
+    {
+        return $this->render('main/Liste candidatures.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+
+
+
 
 
 

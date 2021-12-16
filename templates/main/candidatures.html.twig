@@ -17,7 +17,7 @@
 
                     <div class="input-box">
                         <span class="details">Producteur</span>
-                        <input type="text" placehorder="Entrer votre Prenom" required>
+                        <input type="text" placehorder="Entrer votre Prenom" >
                     </div>
 
                     <div class="input-box">
@@ -60,6 +60,11 @@
                         <input type="text" placehorder="Nom du groupe" required>
                     </div>
 
+                    <div class="input-box">
+                        <span class="details">Membre du groupe</span>
+                        <input type="number" placehorder="Membre"  min="1" max="8" required>
+                    </div>
+
                      
                     <div class="input-box">
                         <span class="details">Date de création</span>
@@ -70,6 +75,11 @@
                     <div class="input-box">
                         <span class="details">Expérience</span>
                         <input type="text" placehorder="Experience" required>
+                    </div>
+
+                     <div class="input-box">
+                        <span class="details">Présentation</span>
+                        <textarea id="story" name="story" rows="2" cols="30"></textarea>
                     </div>
 
                      <div class="input-box">
@@ -92,18 +102,37 @@
                         <span class="details">Audio</span>
                         <input type="file" placehorder="Audio" accept=".mp3" required>
                     </div>
-                              
-                    <div class="input-box">
-                        <span class="details">Présentation</span>
-                        <textarea id="story" name="story" rows="5" cols="33"></textarea
+
+                     <div class="input-box">
+                        <span class="details">Audio</span>
+                        <input type="file" placehorder="Audio" accept=".mp3" required>
                     </div>
 
-                      <div class="input-box">
+                     <div class="input-box">
+                        <span class="details">Audio</span>
+                        <input type="file" placehorder="Audio" accept=".mp3" required>
+                    </div>
+
+                     <div class="input-box">
+                        <span class="details">Sacem PDF</span>
+                        <input type="file" placehorder="Sacem" accept=".pdf">
+                    </div>
+
+                       <div class="input-box">
+                        <span class="details">Fiche technique PDF</span>
+                        <input type="file" placehorder="Fiche" accept=".pdf">
+                    </div>
+
+                        <div class="input-box">
                         <span class="details">Image</span>
                         <input type="file" placehorder="image" accept=".png,.jpeg" required>
                     </div>
                     
-              </div>
+                      <div class="input-box">
+                        <span class="details">Image</span>
+                        <input type="file" placehorder="image" accept=".png,.jpeg" required>
+                    </div>
+                 </div>
                  <div class="button">
                     <input type="submit" value="Enregistrer">
                 </div>
